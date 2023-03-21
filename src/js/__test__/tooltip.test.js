@@ -16,7 +16,7 @@ test("class Tooltip.addTooltip", () => {
   btn.click();
 });
 
-test("class Tooltip.removeTooltip", () => {
+test("class Tooltip.removeTooltip", async () => {
   document.body.innerHTML = `<button class="btn" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>`;
   const btn = document.querySelector(".btn");
   const tooltip = new Tooltip(btn);
@@ -27,5 +27,5 @@ test("class Tooltip.removeTooltip", () => {
   };
 
   btn.click();
-  expect(document.querySelector(".tooltip")).toBe(null);
+  await expect(document.querySelector(".tooltip")).toBe(null);
 });

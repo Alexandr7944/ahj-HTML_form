@@ -1,6 +1,7 @@
 {
   "plugins": ["prettier"],
   "extends": ["eslint:recommended", "plugin:prettier/recommended"],
+  "singleQuote": true,
   "env": {
     "es6": true,
     "browser": true,
