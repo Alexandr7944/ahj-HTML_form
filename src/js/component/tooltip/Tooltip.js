@@ -48,8 +48,7 @@ class Tooltip {
   removeTooltip() {
     const tooltip = document.querySelector(".tooltip");
     if (!tooltip) return;
-    tooltip.style.opacity = 0;
-    setTimeout(() => tooltip.remove(), 300)
+    tooltip.remove();
   }
 }
 

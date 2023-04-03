@@ -27,5 +27,6 @@ test("class Tooltip.removeTooltip", async () => {
   };
 
   btn.click();
+  
   await expect(document.querySelector(".tooltip")).toBe(null);
 });
